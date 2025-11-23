@@ -29,7 +29,7 @@ def rem() :
         view()
         n = int(input("Enter the task number to remove : "))
         if n >= 1 and n <= len(t) :
-            removed = t.p - 1
+            removed = t.pop(n-1)
             print("Removed:", removed)
         else:
             print("Invalid task number!")
@@ -49,4 +49,3 @@ while True :
         break
     else:
         print("Invalid choice .! Please enter 1–4.")
-        
